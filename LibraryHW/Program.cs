@@ -23,11 +23,12 @@ namespace LibraryHW
             //library.Add(book5);
 
             library.ShowInfo("sadasd");
+            //Console.WriteLine(library.ShowInfo("tural potter"));
 
-            foreach (var libraryBook in library.Books)
-            {
-                Console.WriteLine(libraryBook);
-            }
+            //foreach (var libraryBook in library.Books)
+            //{
+            //    Console.WriteLine(libraryBook);
+            //}
 
 
         }

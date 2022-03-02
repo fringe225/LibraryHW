@@ -26,7 +26,9 @@ namespace LibraryHW.Models
 
         public Book ShowInfo(string name)
         {
-            return _books.Find(b => b.Name.ToLower()==name)==null?throw new BookNotFoundException("Book with that info doesn't exist! ", new BookNotFoundException("test")) : new Book("sadas","asdasd",2312,"genre");
+            return _books.Find(b => b.Name.ToLower() == name)
+                ?? throw new BookNotFoundException("Book with that info doesn't exist! ",
+                    new BookNotFoundException("test"));
 
         }
 
